@@ -15,15 +15,17 @@ export default function Footer () {
                     </ul>
                 </div>
                 <div className={styles.column}>
-                    <ul>
-                        <li className={`${styles.brandName}`}>MADE UP</li>
-                        <li>Stay in touch with us</li>
-                        <li className={styles.socialIcons}>
-                            <span><AiOutlineFacebook /></span>
-                            <span><AiOutlineInstagram /></span>
-                            <span><AiOutlineYoutube /></span>
-                        </li>
-                    </ul>
+                    <div className={styles.socialWrapper}>
+                        <ul>
+                            <li className={`${styles.brandName}`}>MADE UP</li>
+                            <li>Stay in touch with us</li>
+                            <li className={styles.socialIcons}>
+                                <span><AiOutlineFacebook /></span>
+                                <span><AiOutlineInstagram /></span>
+                                <span><AiOutlineYoutube /></span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div className={styles.column}>
                     <ul>

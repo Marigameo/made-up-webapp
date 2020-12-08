@@ -32,6 +32,7 @@
 }
 
 .column {
+  flex: 1;
   padding: 40px 120px;
 }
 
@@ -61,8 +62,18 @@ footer {
   padding: 0 15px;
 }
 
-.column:nth-child(2) ul{
-  text-align: center;
+.socialWrapper {
+  width:121px;
+  margin: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .column ul {
+    text-align: center;
+  }
+  .column {
+    flex: auto;
+    width: 100%;
+  }
+}
 
