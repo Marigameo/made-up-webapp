@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Scada&display=swap');
+
+:root {
+  /* colors */
+  --color-primary: #E10000;
+  --color-gray: #DDDDDD;
+  --color-secondary: #444444;
+  --color-white: #FFFFFF;
+  --color-menuContent: #777; 
+
+  /* fonts */
+  --font-scada: 'Scada', sans-serif;
+  --font-jost: 'Jost', sans-serif;
+  --font-mediumBold: 500;
+  --font-normal: 400;
+}
