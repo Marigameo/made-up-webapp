@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Home.module.css'
 import Slider from '../../components/Slider/Slider'
+import Testimonial from '../../components/Testimonial/Testimonial'
 export default function Home () {
     return (
         <>
@@ -16,6 +17,7 @@ export default function Home () {
                 </div>
             </div>
             <Slider />
+            <Testimonial />
         </>
     )
 }

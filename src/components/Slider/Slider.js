@@ -11,6 +11,10 @@ export default class Slider extends Component {
     slide () {
         let wrapper = document.getElementById('slider'),
             items = document.getElementById('slides');
+        console.log(window.screen.width)
+        if (window.screen.width < 768) {
+            items = document.getElementById('mobileslides')
+        }
         let posX1 = 0,
             posX2 = 0,
             posInitial,
@@ -124,117 +128,192 @@ export default class Slider extends Component {
                 <p className="slider-heading"><span>LATEST COLLECTIONS</span></p>
                 <div id="slider" className="slider">
                     <div className="wrapper">
-                        <div id="slides" className="slides">
+                        <div id="slides" className="slides desktopSlider">
                             <div style={{ display: 'flex', flexDirection: "row" }} className="slide">
                                 <div className="slide-image">
                                     <img src={shirtImg} alt="shirt image1"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={pantsImg} alt="pants image1"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={shirtImg} alt="shirt image2"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={pantsImg} alt="pants image2"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                             </div>
                             <div style={{ display: 'flex', flexDirection: "row" }} className="slide">
                                 <div className="slide-image">
                                     <img src={shirtImg} alt="shirt image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={pantsImg} alt="pants image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={shirtImg} alt="shirt image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={pantsImg} alt="pants image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                             </div>
                             <div style={{ display: 'flex', flexDirection: "row" }} className="slide">
                                 <div className="slide-image">
                                     <img src={shirtImg} alt="shirt image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={pantsImg} alt="pants image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={shirtImg} alt="shirt image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={pantsImg} alt="pants image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                             </div>
                             <div style={{ display: 'flex', flexDirection: "row" }} className="slide">
                                 <div className="slide-image">
                                     <img src={shirtImg} alt="shirt image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={pantsImg} alt="pants image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={shirtImg} alt="shirt image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={pantsImg} alt="pants image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                             </div>
                             <div style={{ display: 'flex', flexDirection: "row" }} className="slide">
                                 <div className="slide-image">
                                     <img src={shirtImg} alt="shirt image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={pantsImg} alt="pants image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={shirtImg} alt="shirt image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                                 <div className="slide-image">
                                     <img src={pantsImg} alt="pants image3"></img>
+                                    <div className="image-text">
+                                        <div className="item-name">Printed Polo T-Shirt</div>
+                                        <div className="item-price">1,499.00</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div style={{ display: 'flex', flexDirection: "row" }} className="slide">
-                                <div className="slide-image">
-                                    <img src={shirtImg} alt="shirt image3"></img>
-                                </div>
-                                <div className="slide-image">
-                                    <img src={pantsImg} alt="pants image3"></img>
-                                </div>
-                                <div className="slide-image">
-                                    <img src={shirtImg} alt="shirt image3"></img>
-                                </div>
-                                <div className="slide-image">
-                                    <img src={pantsImg} alt="pants image3"></img>
+                        </div>
+                        <div id="mobileslides" className="slides mobileSlider">
+                            <div className="slide-image slide">
+                                <img src={shirtImg} alt="shirt image3"></img>
+                                <div className="image-text">
+                                    <div className="item-name">Printed Polo T-Shirt</div>
+                                    <div className="item-price">1,499.00</div>
                                 </div>
                             </div>
-                            <div style={{ display: 'flex', flexDirection: "row" }} className="slide">
-                                <div className="slide-image">
-                                    <img src={shirtImg} alt="shirt image3"></img>
-                                </div>
-                                <div className="slide-image">
-                                    <img src={pantsImg} alt="pants image3"></img>
-                                </div>
-                                <div className="slide-image">
-                                    <img src={shirtImg} alt="shirt image3"></img>
-                                </div>
-                                <div className="slide-image">
-                                    <img src={pantsImg} alt="pants image3"></img>
+                            <div className="slide-image slide">
+                                <img src={pantsImg} alt="pants image3"></img>
+                                <div className="image-text">
+                                    <div className="item-name">Printed Polo T-Shirt</div>
+                                    <div className="item-price">1,499.00</div>
                                 </div>
                             </div>
-                            <div style={{ display: 'flex', flexDirection: "row" }} className="slide">
-                                <div className="slide-image">
-                                    <img src={shirtImg} alt="shirt image3"></img>
+                            <div className="slide-image slide">
+                                <img src={pantsImg} alt="pants image3"></img>
+                                <div className="image-text">
+                                    <div className="item-name">Printed Polo T-Shirt</div>
+                                    <div className="item-price">1,499.00</div>
                                 </div>
-                                <div className="slide-image">
-                                    <img src={pantsImg} alt="pants image3"></img>
+                            </div>
+                            <div className="slide-image slide">
+                                <img src={pantsImg} alt="pants image3"></img>
+                                <div className="image-text">
+                                    <div className="item-name">Printed Polo T-Shirt</div>
+                                    <div className="item-price">1,499.00</div>
                                 </div>
-                                <div className="slide-image">
-                                    <img src={shirtImg} alt="shirt image3"></img>
-                                </div>
-                                <div className="slide-image">
-                                    <img src={pantsImg} alt="pants image3"></img>
+                            </div>
+                            <div className="slide-image slide">
+                                <img src={pantsImg} alt="pants image3"></img>
+                                <div className="image-text">
+                                    <div className="item-name">Printed Polo T-Shirt</div>
+                                    <div className="item-price">1,499.00</div>
                                 </div>
                             </div>
                         </div>
