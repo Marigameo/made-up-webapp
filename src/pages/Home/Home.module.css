@@ -7,6 +7,52 @@
     background-size: cover;
     position: relative;
 }
+.heroBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.heroTextL1, .heroTextL2 {
+    font-family: var(--font-jost);
+    font-weight: 400;
+    background-color: var(--color-white);
+    opacity: 0.9;
+    color: var(--color-secondary);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 6px;
+    font-size: 20px;
+    line-height: 29px;
+}
+.heroTextL1 {
+    top: 50%;
+}
+.heroTextL2 {
+    top: 57%;
+}
+
+.heroButton {
+  font-family: var(--font-jost);
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px 30px;
+  top: 77%;
+  position: relative;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-align: center;
+  cursor: pointer;
+  height: 20px;
+}
+
+.primaryText {
+    color: var(--color-primary);
+}
 
 .columnOne {
     margin-top: 5px ;

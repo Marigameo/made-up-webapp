@@ -7,10 +7,14 @@
   --color-secondary: #444444;
   --color-white: #FFFFFF;
   --color-menuContent: #777; 
+  --bg-snowWhite: #F9F9F9;
+  --color-yellow: #FDC02F;
+  --color-lightgrey: #707070;
 
   /* fonts */
   --font-scada: 'Scada', sans-serif;
   --font-jost: 'Jost', sans-serif;
+  --font-bankgothic: BankGothic;
   --font-mediumBold: 500;
   --font-normal: 400;
 }

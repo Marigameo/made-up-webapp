@@ -1,0 +1,105 @@
+@import '../theme/theme.css';
+
+.testimonialHeading {
+    font-family: var(--font-bankgothic);
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 58px;
+}
+
+.testimonialWrapper {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 4em;
+    background-color: var(--bg-snowWhite);
+}
+.testimonialList {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.testimonial {
+    width: 30%;
+    background: var(--color-white);
+}
+.header, .testimonialText {
+    margin: 25px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonialText {
+    font-style: italic;
+    font-family: var(--font-jost);
+    font-size: 14px;
+    line-height: 20.23px;
+    color: var(--color-lightgrey);
+    text-align: left;
+}
+
+.stars {
+    margin: 5px;
+    color: var(--color-yellow);
+    font-size: 14px;
+}
+
+.testimonial:before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    top: 134em;
+    background: url('../../assets/images/testimonial.png');
+}
+.testimonial:nth-child(1):before {
+    left: 4%;
+}
+.testimonial:nth-child(2):before {
+    left: 34.5%;
+}
+
+.testimonial:nth-child(3):before {
+    left: 65%;
+}
+
+/* Android 34 - tablet screen size */
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+    .testimonial:nth-child(3):before, .testimonial:nth-child(3)  {
+        display: none;
+    }
+    .testimonial {
+        width: 45%;
+    }
+    .testimonial:nth-child(1):before{
+        top: 180em;
+        left: 8%;
+    }
+    .testimonial:nth-child(2):before {
+        top: 180em;
+        left: 47%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 994px) {
+    
+}
+
+/* mobile screen  */
+@media only screen and (max-width: 360px) {
+    .testimonial:nth-child(3):before, .testimonial:nth-child(3), .testimonial:nth-child(2):before, .testimonial:nth-child(2)  {
+        display: none;
+    }
+    .testimonial:nth-child(1):before {
+        top: 180em;
+        left: 2.5em;
+    }
+    .testimonial {
+        width: 100%;
+    }
+}

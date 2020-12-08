@@ -5,6 +5,7 @@ import pantsImg from '../../assets/images/pants.png'
 
 export default class Slider extends Component {
     componentDidMount () {
+        window.addEventListener('resize', this.slide)
         this.slide();
     }
 
