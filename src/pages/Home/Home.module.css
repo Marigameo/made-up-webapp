@@ -1,0 +1,82 @@
+.heroContainer {
+    width: 100%;
+}
+.heroBanner, .columnOne, .asideImageBottom, .asideImageTop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.columnOne {
+    margin-top: 5px ;
+    margin-right: 5px;
+}
+
+.heroBanner {
+    background-image: url(../../assets/images/hero-banner.png);
+    max-width: 100%;
+    height: 680px; 
+}
+
+.columnOne {
+    background-image: url(../../assets/images/image-suit-vertical.png);
+    width: 50%;
+    height: 740px; 
+}
+
+.asideImageTop {
+    background-image: url(../../assets/images/formal-suit.png);
+    width: 100%;
+}
+
+.asideImageBottom {
+    background-image: url(../../assets/images/image-suit-horizontal.png);
+    width: 100%;
+}
+
+.asideImageBottom, .asideImageTop {
+    margin-top: 5px;
+    height: 365px;
+}
+
+.mainRow {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.columnTwo {
+    height: 100%;
+    width: 50%;
+}   
+
+
+/* Android 34 - tablet screen size */
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+    
+}
+
+/* desktop screen */
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+    
+}
+
+/* mobile screen  */
+@media only screen and (max-width: 360px) {
+
+}
+
+/* tablet & mobile screens */
+@media only screen and (max-width: 768px) {
+    .mainRow {
+        flex-direction: column;
+    }
+    .columnOne {
+        width: 100%;
+    }
+    .columnTwo {
+        width: 100%;
+        height: 100%;
+    }
+}
