@@ -3,6 +3,7 @@ import styles from './Home.module.css'
 import Slider from '../../components/Slider/Slider'
 import Testimonial from '../../components/Testimonial/Testimonial'
 import Newsletter from '../../components/Newsletter/Newsletter'
+import Footer from '../../components/Footer/Footer'
 
 export default function Home () {
     return (
@@ -45,6 +46,7 @@ export default function Home () {
             <Slider />
             <Testimonial />
             <Newsletter />
+            <Footer />
         </>
     )
 }
