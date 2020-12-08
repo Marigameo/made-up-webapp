@@ -34,8 +34,10 @@ export default function Navbar () {
                 </nav>
             </div>
             <nav className={styles.navBarContainer}>
-                <ul className={styles.menu}>
-                    <li className={`${styles.brandName} + ' ' + ${styles.menuItems}`}>MADE UP</li>
+                <ul className={styles.leftMenu}>
+                    <li className={`${styles.brandName}`}>MADE UP</li>
+                </ul>
+                <ul className={styles.rightMenu}>
                     <li className={`${styles.menuItems} + ' '+ ${styles.menuItemActive} + ' ' + ${styles.smallScreenHidden}`}> <Link href='/'>For me</Link></li>
                     <li className={`${styles.menuItems} + ' ' + ${styles.smallScreenHidden}`}><Link href='#'>Jeans</Link></li>
                     <li className={`${styles.menuItems} + ' ' + ${styles.smallScreenHidden}`}><Link href='#'>Shirts</Link></li>
