@@ -12,7 +12,6 @@ export default class Slider extends Component {
     slide () {
         let wrapper = document.getElementById('slider'),
             items = document.getElementById('slides');
-        console.log(window.screen.width)
         if (window.screen.width < 768) {
             items = document.getElementById('mobileslides')
         }

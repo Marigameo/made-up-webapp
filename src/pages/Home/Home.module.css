@@ -1,3 +1,5 @@
+@import '../../components/theme/theme.css';
+
 .heroContainer {
     width: 100%;
 }

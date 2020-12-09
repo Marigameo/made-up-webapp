@@ -1,0 +1,64 @@
+@import '../theme/theme.css';
+
+.formContainer {
+    padding: 5%;
+    background: var(--color-white);
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    min-height: 530px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    width: 100%;
+}
+
+.formHeading {
+    padding: 20px 0;
+}
+
+.inputRow {
+    display: flex;
+    margin: 20px 0;
+}
+
+.inputColumn {
+    flex: 1;
+}
+
+.inputColumn:nth-child(1) {
+    margin-right: 10px;
+}
+
+.input {
+    padding: 13px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    padding: 16.5px;
+    background: var(--color-thickBlack);
+    color: var(--color-white);
+    border: none;
+}
+
+@media only screen and (max-width: 768px) {
+   .inputRow {
+        flex-direction: column;
+    }
+
+    .inputColumn:nth-child(1) {
+        margin: 0 0 20px 0;
+    }
+
+    .buttonWrapper {
+        justify-content: center;
+    }
+}
