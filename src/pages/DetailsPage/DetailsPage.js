@@ -8,7 +8,8 @@ import Link from '../../components/Link'
 
 import './accordian.css'
 
-export default function DetailsPage () {
+export default function DetailsPage ({ profileChecked, ordersChecked }) {
+    console.log(typeof profileChecked, typeof ordersChecked)
     return (
         <>
             <div className={`${styles.container} + " " + ${styles.largeScreensOnly}`}>
@@ -23,7 +24,7 @@ export default function DetailsPage () {
                     <nav className={styles.listWrapper}>
                         <ul className={styles.navList}>
                             <Link href="/profile">
-                                <li className={styles.navItemWrapper}>
+                                <li className={profileChecked ? `${styles.navItemWrapper} + " " + ${styles.profileIndicator}` : styles.navItemWrapper}>
                                     <div className={styles.navContent}>
                                         <div className={styles.title}>
                                             My Profile
@@ -36,7 +37,7 @@ export default function DetailsPage () {
                                 </li>
                             </Link>
                             <Link href="/orders">
-                                <li className={styles.navItemWrapper}>
+                                <li className={ordersChecked ? `${styles.navItemWrapper} + " " + ${styles.ordersIndicator}` : styles.navItemWrapper}>
                                     <div className={styles.navContent}>
                                         <div className={styles.title}>
                                             My orders
@@ -64,8 +65,6 @@ export default function DetailsPage () {
                 </aside>
                 <section className={styles.informationWrapper}>
                     {window.location.pathname === '/profile' ? <ProfilePage /> : <OrdersPage />}
-                    {/* <ProfilePage /> */}
-                    {/* <OrdersPage /> */}
                 </section>
             </div>
             <div className={`${styles.accordian} + " " + ${styles.smallScreensOnly}`}>
@@ -78,8 +77,8 @@ export default function DetailsPage () {
                 </div>
                 <ul className="accordion css-accordion">
                     <li className="accordion-item">
-                        <input className="accordion-item-input" type="checkbox" name="accordion" id="item1" />
-                        <label for="item1" class="accordion-item-hd">
+                        <input className="accordion-item-input" type="checkbox" name="accordion" id="item1" defaultChecked={profileChecked} />
+                        <label htmlFor="item1" className="accordion-item-hd">
                             <div className={styles.navContent}>
                                 <div className={styles.title}>
                                     My Profile
@@ -88,13 +87,13 @@ export default function DetailsPage () {
                                     Notifications, password
                                     </div>
                             </div>
-                            <span class="accordion-item-hd-cta"><FiChevronUp /></span>
+                            <span className="accordion-item-hd-cta"><FiChevronUp /></span>
                         </label>
                         <div className="accordion-item-bd"><ProfilePage /></div>
                     </li>
-                    <li class="accordion-item">
-                        <input className="accordion-item-input" type="checkbox" name="accordion" id="item2" />
-                        <label for="item2" class="accordion-item-hd">
+                    <li className="accordion-item">
+                        <input className="accordion-item-input" type="checkbox" name="accordion" id="item2" defaultChecked={ordersChecked} />
+                        <label htmlFor="item2" className="accordion-item-hd">
                             <div className={styles.navContent}>
                                 <div className={styles.title}>
                                     My orders
@@ -103,13 +102,13 @@ export default function DetailsPage () {
                                     Already have 12 orders
                                 </div>
                             </div>
-                            <span class="accordion-item-hd-cta"><FiChevronUp /></span>
+                            <span className="accordion-item-hd-cta"><FiChevronUp /></span>
                         </label>
                         <div className="accordion-item-bd"><OrdersPage /></div>
                     </li>
-                    <li class="accordion-item">
+                    <li className="accordion-item">
                         <input className="accordion-item-input" type="checkbox" name="accordion" id="item3" />
-                        <label for="item3" class="accordion-item-hd">
+                        <label htmlFor="item3" className="accordion-item-hd">
                             <div className={styles.navContent}>
                                 <div className={styles.title}>
                                     Shipping addresses
@@ -118,7 +117,7 @@ export default function DetailsPage () {
                                     3 addresses
                                 </div>
                             </div>
-                            <span class="accordion-item-hd-cta"><FiChevronUp /></span>
+                            <span className="accordion-item-hd-cta"><FiChevronUp /></span>
                         </label>
                         <div className="accordion-item-bd">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequuntur architecto maxime, saepe repudiandae quidem quisquam aliquam cumque possimus inventore, deserunt nostrum, explicabo modi voluptatibus sed, labore quaerat. Accusamus, officiis. </div>
                     </li>

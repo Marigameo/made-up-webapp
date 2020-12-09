@@ -10,19 +10,28 @@
     flex-direction: column;
 }
 
+.heading {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+}
+
 .image {
     width: 100px;
-    height: 100px;
+    height: auto;
     background: #DDDDDD;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
+    margin: 10px;
     align-items: center;
 }
 
 .listItem {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    /* margin: 10px; */
+    align-items: center;
 }
 
 .linebreak {
@@ -30,7 +39,7 @@
     width: 100%;
 }
 
-.orderId, .name, .deliveryDate, .paymentType {
+.orderId, .name, .deliveryDate, .paymentType, .heading {
     font-family: var(--font-jost);
 }
 
@@ -65,4 +74,17 @@
     float: right;
     top: 0px;
     right: -2px;
+}
+
+.smallScreensOnly {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .smallScreensOnly {
+        display: inline;
+    }
+    .largeScreensOnly {
+        display: none;
+    }
 }

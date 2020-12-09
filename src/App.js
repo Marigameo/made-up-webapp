@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
 import Home from './pages/Home/Home'
 import DetailsPage from './pages/DetailsPage/DetailsPage';
-import Orders from './components/Orders/Orders';
 
 function App () {
   return (
@@ -14,10 +13,10 @@ function App () {
         <Home />
       </Route>
       <Route path='/profile'>
-        <DetailsPage />
+        <DetailsPage profileChecked={true} ordersChecked={false} />
       </Route>
       <Route path='/orders'>
-        <DetailsPage />
+        <DetailsPage profileChecked={false} ordersChecked={true} />
       </Route>
       <Footer />
     </div>
