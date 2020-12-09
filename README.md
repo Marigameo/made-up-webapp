@@ -16,7 +16,7 @@ Simple UI challenge - made up fashion webapp UI
 
 * yarn start
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open localhost [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Pages
 
@@ -26,11 +26,11 @@ Profile page - [http://localhost:3000/profile](http://localhost:3000/profile)
 
 Orders page - [http://localhost:3000/orders](http://localhost:3000/orders)
 
-Note: Tried hosting it, for some reason the custom routing implementation didn't work well, currently experimenting. Still, the home page is accessible - You can check it [here](https://made-up.netlify.app/).
+**Note:** Tried hosting it, for some reason the custom routing implementation didn't work well, currently experimenting. Still, the home page is accessible - You can check it [here](https://made-up.netlify.app/).
 
 
 ## Contact 
 
-### Email - mariappangameo@gmail.com
+#### Email - mariappangameo@gmail.com
 
 Also, check my other projects & blogs at - [Portfolio](http://mariappan.netlify.com/)
