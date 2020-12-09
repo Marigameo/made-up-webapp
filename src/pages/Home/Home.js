@@ -8,7 +8,7 @@ export default function Home () {
     return (
         <>
             {/* Hero banner section */}
-            <div className={styles.heroContainer}>
+            <section className={styles.heroContainer}>
                 <div className={styles.heroBanner}>
                     <div className={styles.heroTextL1}>
                         Clothes that <span className={styles.primaryText}>respire</span>
@@ -42,7 +42,7 @@ export default function Home () {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             {/* slider section */}
             <Slider />
             {/* testimonial section */}
