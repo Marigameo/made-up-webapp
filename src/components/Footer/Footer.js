@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Footer.module.css'
 import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
+import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 
 export default function Footer () {
     return (
@@ -35,8 +36,8 @@ export default function Footer () {
                             <div>No: 7,A2B road, Adayar Rajpuram, T-Nagar, Chennai - 642002.</div>
                         </li>
                         <li>
-                            <div>sales@madeup.com</div>
-                            <div>044 9999 9999</div>
+                            <div><span className={styles.icons}><HiOutlineMail /></span>sales@madeup.com</div>
+                            <div><span className={styles.icons}><HiOutlinePhone /></span>044 9999 9999</div>
                         </li>
                     </ul>
                 </div>

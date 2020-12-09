@@ -49,6 +49,26 @@
   margin-right: 8%;
 }
 
+.icons {
+    margin-right: 4%;
+}
+
+.footerWrapper::before {
+  content: 'LOCATE  US';
+  position: relative;
+  color: var(--color-white);
+  padding: 10px;
+  text-align: center;
+  background: var(--color-blackMono);
+  box-shadow: 6px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 6px 6px 0px 0px;
+  width: 160px;
+  float: right;
+  top: -2.3em;
+  right: 14%;
+  font-family: var(--font-jost);
+}
+
 .column ul li {
     list-style-type: none;
     margin-bottom: 27px;
@@ -76,6 +96,11 @@ footer {
     flex: auto;
     width: 100%;
     padding: 40px;
+  }
+  .footerWrapper::before {
+    margin: auto;
+    top: 0;
+    right: 0;
   }
 }
 
