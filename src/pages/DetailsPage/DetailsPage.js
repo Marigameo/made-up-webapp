@@ -87,6 +87,7 @@ export default function DetailsPage ({ profileChecked, ordersChecked }) {
                             </div>
                             <span className="accordion-item-hd-cta"><FiChevronUp /></span>
                         </label>
+                        <hr />
                         <div className="accordion-item-bd"><ProfilePage /></div>
                     </li>
                     <li className="accordion-item">
@@ -102,6 +103,7 @@ export default function DetailsPage ({ profileChecked, ordersChecked }) {
                             </div>
                             <span className="accordion-item-hd-cta"><FiChevronUp /></span>
                         </label>
+                        <hr />
                         <div className="accordion-item-bd"><OrdersPage /></div>
                     </li>
                     <li className="accordion-item">
@@ -117,6 +119,7 @@ export default function DetailsPage ({ profileChecked, ordersChecked }) {
                             </div>
                             <span className="accordion-item-hd-cta"><FiChevronUp /></span>
                         </label>
+                        <hr />
                         <div className="accordion-item-bd">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consequuntur architecto maxime, saepe repudiandae quidem quisquam aliquam cumque possimus inventore, deserunt nostrum, explicabo modi voluptatibus sed, labore quaerat. Accusamus, officiis. </div>
                     </li>
                 </ul>
