@@ -75,8 +75,8 @@
 .overlay {
   height: 100%;
   width: 85%;
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 100;
   top: 0;
   right: 0;
   background-color: var(--color-white);
