@@ -7,6 +7,7 @@ import Newsletter from '../../components/Newsletter/Newsletter'
 export default function Home () {
     return (
         <>
+            {/* Hero banner section */}
             <div className={styles.heroContainer}>
                 <div className={styles.heroBanner}>
                     <div className={styles.heroTextL1}>
@@ -42,8 +43,11 @@ export default function Home () {
                     </div>
                 </div>
             </div>
+            {/* slider section */}
             <Slider />
+            {/* testimonial section */}
             <Testimonial />
+            {/* newsletter section */}
             <Newsletter />
         </>
     )

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Orders.module.css'
 import denimModal from '../../assets/images/denim.png'
+
 export default function Orders () {
     return (
         <div className={styles.ordersContainer}>

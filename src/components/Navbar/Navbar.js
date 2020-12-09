@@ -5,14 +5,19 @@ import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineHeart } from "react-ic
 import { FaRegUser } from "react-icons/fa";
 
 export default function Navbar () {
+
     const [isMobileNavOpen, setMobileNavOpen] = useState(false);
+
+    //hide mobile nav
     const closeNav = () => {
-        console.log('called')
         setMobileNavOpen(false)
     }
+
+    //show mobile nav
     const openNav = () => {
         setMobileNavOpen(true)
     }
+
     return (
         <div className={styles.container}>
             <div className={!isMobileNavOpen ? `${styles.overlay} + ' ' + ${styles.hide}` : `${styles.overlay} + ' ' + ${styles.show}`} id="overlay">

@@ -5,11 +5,9 @@ import { FiChevronRight, FiChevronUp } from "react-icons/fi";
 import ProfilePage from '../../components/Profile/Profile'
 import OrdersPage from '../../components/Orders/Orders'
 import Link from '../../components/Link'
-
 import './accordian.css'
 
 export default function DetailsPage ({ profileChecked, ordersChecked }) {
-    console.log(typeof profileChecked, typeof ordersChecked)
     return (
         <>
             <div className={`${styles.container} + " " + ${styles.largeScreensOnly}`}>

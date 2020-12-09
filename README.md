@@ -2,7 +2,7 @@
 
 Simple UI challenge - made up fashion webapp UI
 
-You can find the working demo on [here](https://made-up.netlify.app/) [still not hosted]
+You can find the working demo on [here](https://made-up.netlify.app/)
 
 ## Tech Stack
 

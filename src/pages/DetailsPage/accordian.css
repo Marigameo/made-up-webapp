@@ -35,7 +35,6 @@
   width: 30px;
   position: absolute;
   top: calc(50% - 6px );
-  /*minus half font-size*/
   right: 0;
   pointer-events: none;
   -webkit-transition: -webkit-transform .3s ease;

@@ -30,6 +30,7 @@
     justify-content: space-between;
     cursor: pointer;
 }
+
 .title, .secondaryText {
     font-family: var(--font-jost);
 }

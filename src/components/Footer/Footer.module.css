@@ -3,6 +3,7 @@
 .footerWrapper {
     background-color: var(--color-thickBlack);
 }
+
 .brandName {
     background-color: var(--color-primary);
     font-family: var(--font-scada);

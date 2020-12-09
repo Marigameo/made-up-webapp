@@ -3,18 +3,25 @@ import './Slider.css'
 import shirtImg from '../../assets/images/shirt.png'
 import pantsImg from '../../assets/images/pants.png'
 
+/* custom slider implementation without any external libraries - still lot can be improved*/
 export default class Slider extends Component {
+
     componentDidMount () {
         window.addEventListener('resize', this.slide)
         this.slide();
     }
 
+    // TODO: Change dom sepcific codes to refs & slipt functions 
     slide () {
         let wrapper = document.getElementById('slider'),
             items = document.getElementById('slides');
+
+        //get item length from mobile slider if screen size is small
         if (window.screen.width < 768) {
             items = document.getElementById('mobileslides')
         }
+
+        //calculating positions & setting initials 
         let posX1 = 0,
             posX2 = 0,
             posInitial,
@@ -30,22 +37,23 @@ export default class Slider extends Component {
             index = 0,
             allowShift = true;
 
-        // Clone first and last slide
+        // Cloning first and last slide
         items.appendChild(cloneFirst);
         items.insertBefore(cloneLast, firstSlide);
         wrapper.classList.add('loaded');
 
-        // Mouse events
+        // Handle mouse event
         items.onmousedown = dragStart;
 
-        // Touch events
+        // Handle touch events
         items.addEventListener('touchstart', dragStart);
         items.addEventListener('touchend', dragEnd);
         items.addEventListener('touchmove', dragAction);
 
-        // Transition events
+        // Handle transition events
         items.addEventListener('transitionend', checkIndex);
 
+        //HTML 5 drag & drop handlers
         function dragStart (e) {
             e = e || window.event;
             e.preventDefault();
@@ -105,6 +113,7 @@ export default class Slider extends Component {
             allowShift = false;
         }
 
+        //find the index of slides based on length calculated
         function checkIndex () {
             items.classList.remove('shifting');
 

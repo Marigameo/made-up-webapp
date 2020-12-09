@@ -9,6 +9,7 @@ function App () {
   return (
     <div className="App">
       <Navbar />
+      {/* custom route component */}
       <Route path='/'>
         <Home />
       </Route>

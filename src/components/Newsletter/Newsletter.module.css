@@ -22,6 +22,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .form {
     top: 80%;
     height: 42px;
@@ -57,9 +58,11 @@
     font-size: 20px;
     line-height: 29px;
 }
+
 .input, .subscribeButton {
     margin-right: 20px;
 }
+
 .input {
     width: 360px;
     padding: 11.5px 0;
