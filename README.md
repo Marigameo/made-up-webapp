@@ -33,4 +33,4 @@ Note: Tried hosting it, for some reason the custom routing implementation didn't
 
 ### Email - mariappangameo@gmail.com
 
-To know more about me [Portfolio](http://mariappan.netlify.com/)
+Also, check my other projects & blogs at - [Portfolio](http://mariappan.netlify.com/)
