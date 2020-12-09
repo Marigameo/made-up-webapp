@@ -2,11 +2,11 @@
 
 Simple UI challenge - made up fashion webapp UI
 
-You can find the working demo on [here](https://made-up.netlify.app/)
-
 ## Tech Stack
 
-* React.JS
+* React.JS 
+* Custom components with pure css, flexbox
+* Not used any - router libraries, CSS frameworks
 
 ## Steps to clone and run the application
 
@@ -17,6 +17,17 @@ You can find the working demo on [here](https://made-up.netlify.app/)
 * yarn start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Pages
+
+Homepage - [http://localhost:3000](http://localhost:3000)
+
+Profile page - [http://localhost:3000/profile](http://localhost:3000/profile)
+
+Orders page - [http://localhost:3000/orders](http://localhost:3000/orders)
+
+Note: Tried hosting it, for some reason the custom routing implementation didn't work well, currently experimenting. Still, the home page is accessible - You can check it [here](https://made-up.netlify.app/).
+
 
 ## Contact 
 
