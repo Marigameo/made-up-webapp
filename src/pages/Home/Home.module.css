@@ -104,8 +104,15 @@
     width: 50%;
 }   
 
+.navSlider {
+    display: none;
+}
+
 /* tablet & mobile screens */
 @media only screen and (max-width: 768px) {
+    .navSlider {
+        display: block;
+    }
     .mainRow {
         flex-direction: column;
     }

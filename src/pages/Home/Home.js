@@ -3,10 +3,14 @@ import styles from './Home.module.css'
 import Slider from '../../components/Slider/Slider'
 import Testimonial from '../../components/Testimonial/Testimonial'
 import Newsletter from '../../components/Newsletter/Newsletter'
+import NavSlider from '../../components/NavSlider/NavSlider'
 
 export default function Home () {
     return (
         <>
+            <section className={styles.navSlider}>
+                <NavSlider />
+            </section>
             {/* Hero banner section */}
             <section className={styles.heroContainer}>
                 <div className={styles.heroBanner}>

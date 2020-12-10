@@ -1,0 +1,59 @@
+.nav-slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    position: relative;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.nav-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-slider .nav-slide {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: 0.3s left ease-in-out;
+}
+
+.nav-slider .nav-item {
+    width: 100%;
+    height: auto;
+    margin: 40px;
+}
+
+.nav-slider .nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-ctrl {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.nav-ctrl-btn {
+  padding: 20px 20px;
+  min-width: 50px;
+  background: #fff;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+
+  position: absolute;
+  top: 50%;
+  margin-top: -27.5px;
+}
+
+.nav-ctrl-btn.nav-pro-prev {
+  left: 0;
+}
+
+.nav-ctrl-btn.nav-pro-next {
+  right: 0;
+}
