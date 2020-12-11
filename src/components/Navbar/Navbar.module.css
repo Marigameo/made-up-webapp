@@ -14,7 +14,6 @@
     font-size: 20px;
     line-height: 25px;
     text-align: center;
-    color: #FFFFFF;
     padding: 13.8px 0;
     margin-left: 30%;
     display: flex;
@@ -23,6 +22,10 @@
     box-sizing: border-box;
     height: 70px;
     width: 103px;
+}
+
+.brandName a {
+    color: var(--color-white);
 }
 
 .rightMenu {

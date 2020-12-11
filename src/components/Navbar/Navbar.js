@@ -24,9 +24,9 @@ export default function Navbar () {
                 <div className={styles.closebtn} onClick={closeNav}>&times;</div>
                 <nav className={styles.overlayContent}>
                     <ul>
-                        <li className={`${styles.menuItemActive} + ' ' + ${styles.mediumText}`}><Link href="#">MY PROFILE</Link></li>
+                        <li className={`${styles.menuItemActive} + ' ' + ${styles.mediumText}`} onClick={closeNav}><Link href="/profile">MY PROFILE</Link></li>
                         <li className={styles.mediumText}><Link href="#">MY WISHLIST</Link></li>
-                        <li className={styles.mediumText}><Link href="#">MY ORDERS</Link></li>
+                        <li className={styles.mediumText} onClick={closeNav}><Link href="/orders">MY ORDERS</Link></li>
                         <li className={styles.mediumText}><Link href="#">MY ADDRESS</Link></li>
                         <span className={styles.dividerContainer}>
                             <hr className={styles.divider} />
@@ -40,7 +40,7 @@ export default function Navbar () {
             </div>
             <nav className={styles.navBarContainer}>
                 <ul className={styles.leftMenu}>
-                    <li className={`${styles.brandName}`}>MADE UP</li>
+                    <li className={`${styles.brandName}`}><Link href="/">MADE UP</Link></li>
                 </ul>
                 <ul className={styles.rightMenu}>
                     <li className={`${styles.menuItems} + ' '+ ${styles.menuItemActive} + ' ' + ${styles.smallScreenHidden}`}> <Link href='/'>For me</Link></li>
@@ -53,7 +53,7 @@ export default function Navbar () {
                     <li className={styles.menuIcons}><AiOutlineSearch /></li>
                     <li className={styles.menuIcons}><AiOutlineShoppingCart /></li>
                     <li className={`${styles.menuIcons} + ' ' + ${styles.smallScreenHidden}`}> <AiOutlineHeart /></li>
-                    <li className={`${styles.menuIcons} + ' ' + ${styles.smallScreenHidden}`} id="user"><FaRegUser /></li>
+                    <li className={`${styles.menuIcons} + ' ' + ${styles.smallScreenHidden}`} id="user"><Link href="/profile"><FaRegUser /></Link></li>
                     <span className={`${styles.menuIcons} + ' ' + ${styles.smallScreenShow} + ' ' + ${styles.hamburger}`} onClick={openNav}>&#9776;</span>
                 </ul>
             </nav>
