@@ -74,7 +74,7 @@
 }
 
 /* Android 34 - tablet screen size */
-@media only screen and (min-width: 361px) and (max-width: 768px) {
+@media only screen and (min-width: 401px) and (max-width: 768px) {
     .testimonial:nth-child(3):before, .testimonial:nth-child(3)  {
         display: none;
     }
@@ -82,22 +82,22 @@
         width: 45%;
     }
     .testimonial:nth-child(1):before{
-        top: 180em;
+        top: 189em;
         left: 8%;
     }
     .testimonial:nth-child(2):before {
-        top: 180em;
-        left: 47%;
+        top: 189em;
+        left: 49%;
     }
 }
 
 /* mobile screen  */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
     .testimonial:nth-child(3):before, .testimonial:nth-child(3), .testimonial:nth-child(2):before, .testimonial:nth-child(2)  {
         display: none;
     }
     .testimonial:nth-child(1):before {
-        top: 180em;
+        top: 189em;
         left: 2.5em;
     }
     .testimonial {

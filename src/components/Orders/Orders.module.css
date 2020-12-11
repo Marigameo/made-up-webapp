@@ -90,4 +90,22 @@
     .largeScreensOnly {
         display: none;
     }
+    .ordersContainer {
+        padding: 0;
+        border: none;
+    }
+    .amount, .paymentType, .orderId, .deliveryDate {
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .amount, .paymentType, .orderId, .deliveryDate {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .name {
+        font-size: 12px;
+    }
 }

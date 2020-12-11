@@ -64,3 +64,10 @@
   position: absolute;
   left: -9999px;
 }
+
+
+@media only screen and (max-width: 400px) {
+  .accordion {
+    padding: 0;
+  }
+}
