@@ -38,8 +38,12 @@
     width: 100%;
 }
 
-.orderId, .name, .deliveryDate, .paymentType, .heading {
+.orderId, .name, .deliveryDate, .paymentType, .heading, .amount {
     font-family: var(--font-jost);
+}
+
+.orderId, .deliveryDate {
+    margin: 5px 0;
 }
 
 .name {
