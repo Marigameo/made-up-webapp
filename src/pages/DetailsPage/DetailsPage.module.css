@@ -71,11 +71,11 @@
 }
 
 .profileIndicator::after{
-    top: 75%;
+    top: 20.5rem;
 }
 
 .ordersIndicator::after{
-    top: 95%;
+    top: 25rem;
 }
 
 @media only screen and (max-width: 768px) {
